@@ -29,6 +29,7 @@ ul {
   --hero-background-color: #2e2f42b2;
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
+  --customers-background: #E5E5E5;
 }
 
 body {
@@ -255,6 +256,7 @@ img {
 
 .team-item p {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-item h3 {
@@ -458,4 +460,109 @@ img {
   border-left: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
+}
+
+.social_media_lnk {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* .social_media_lnk li{
+    max-height: 40px;
+} */
+.social_media_lnk li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main_color);
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  padding: 4px;
+  border-radius: 9999px;
+}
+
+.social_media_lnk li a:hover {
+  background-color: var(--pressed-state-color);
+  transition: 0.3s;
+}
+
+.social_media_lnk li svg {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.social_media_lnk li a {
+  background-color: var(--primary-brand-color);
+}
+
+.icon-bg svg {
+  max-width: 64px;
+  max-height: 64px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-bg {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #f4f4fd;
+  display: flex;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers {
+  background-color: var(--customers-background);
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.customers h2 {
+  margin-bottom: 72px;
+}
+
+.customers_list li {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 4px;
+}
+
+.customers_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.customers_list li svg {
+  max-width: 104px;
+  max-height: 56px;
+}
+
+.customers_list li a svg.icon:hover {
+  fill: var(--pressed-state-color);
+}
+
+.customers_list li a {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.customers_list li:hover {
+  border: 1px solid var(--pressed-state-color);
+}
+
+.icon {
+  fill: currentColor;
 }
