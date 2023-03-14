@@ -592,7 +592,8 @@ img {
   border-radius: 9999px;
 }
 
-.dark_social_media_lnk li a:hover {
+.dark_social_media_lnk li a:hover,
+.dark_social_media_lnk li a:focus {
   background-color: var(--success-color);
   transition: 0.2s;
 }
