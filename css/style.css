@@ -132,9 +132,12 @@ body {
 }
 
 .hero {
+  margin: auto;
   background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)), url(../images/hero_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  max-width: 1440px;
   display: block;
   text-align: center;
   padding-top: 188px;
@@ -278,7 +281,7 @@ img {
 }
 
 .filter-li>button {
-  background-color: var(--accent-color);
+  background-color: var(--light-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   color: var(--pressed-state-color);
@@ -331,9 +334,20 @@ img {
   margin-right: 24px;
 }
 
-.portfolio-item:hover {
+.portfolio-item a:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: 0.5s;
+}
+
+.portfolio-item a {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-item a div p {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .section {
@@ -472,12 +486,9 @@ img {
   justify-content: center;
   align-items: center;
   background-color: var(--main_color);
-  max-width: 40px;
-  min-width: 40px;
-  max-height: 40px;
-  min-height: 40px;
-  padding: 4px;
-  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .social_media_lnk li a:hover,
@@ -504,17 +515,18 @@ img {
 }
 
 .icon-bg {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: 264px;
+  height: 112px;
   background-color: #f4f4fd;
   display: flex;
   margin-bottom: 8px;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
 }
 
 .customers {
-  background-color: var(--customers-background);
+  background-color: var(--white-background-color);
   text-align: center;
 }
 
